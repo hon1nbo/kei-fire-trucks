@@ -1,6 +1,6 @@
 ---
 layout: vehicle
-title: Subaru Sambar Fire Truck
+title: Subaru Sambar Fire Truck (DATA NOT YET VERIFIED)
 description: Specifications, galleries, and parts information for the Subaru Sambar kei fire truck
 permalink: /vehicles/subaru-sambar/
 tags:
