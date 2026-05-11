@@ -585,11 +585,41 @@ strong { font-weight: 600; }
 .footer-link { color: var(--color-footer-text); transition: color 0.12s; }
 .footer-link:hover { color: #fff; }
 
+/* --- Contribute Link (header, top-right) ---
+   Edit here to change appearance: color, size, border, spacing.        */
+.contribute-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  color: var(--color-nav-text);       /* text + icon colour */
+  background: rgba(255,255,255,.08);  /* subtle background pill */
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;               /* pill shape; set to var(--radius) for square */
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.contribute-link:hover {
+  background: rgba(255,255,255,.18);
+  border-color: rgba(255,255,255,.35);
+  color: #fff;
+}
+.contribute-icon {
+  flex-shrink: 0;
+  /* icon size is set via width/height on the element; override here if needed */
+}
+
 /* --- Responsive --- */
 @media (max-width: 700px) {
   :root { --nav-height: 56px; }
 
   .nav-toggle { display: flex; }
+  .contribute-label { display: none; }  /* icon only on mobile */
+  .contribute-link { padding: 0.35rem 0.5rem; }
 
   .site-nav {
     display: none;
