@@ -1,0 +1,22 @@
+---
+layout: base
+---
+<div class="container page-wrap">
+  {% if breadcrumb %}
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list" role="list">
+      {% for crumb in breadcrumb %}
+        <li class="breadcrumb-item">
+          {% if crumb.url %}<a href="{{ crumb.url }}" class="breadcrumb-link">{{ crumb.label }}</a>
+          {% else %}<span aria-current="page">{{ crumb.label }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </nav>
+  {% endif %}
+
+  <article class="page-content">
+    <h1 class="page-title">{{ title }}</h1>
+    {{ content | safe }}
+  </article>
+</div>

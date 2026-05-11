@@ -1,0 +1,100 @@
+---
+layout: base
+---
+<div class="container page-wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list" role="list">
+      <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
+      <li class="breadcrumb-item"><a href="/vehicles/" class="breadcrumb-link">Vehicles</a></li>
+      <li class="breadcrumb-item"><span aria-current="page">{{ title }}</span></li>
+    </ol>
+  </nav>
+
+  <article class="vehicle-profile">
+    <h1 class="page-title">{{ title }}</h1>
+
+    {% if vehicle.type %}
+    <p class="vehicle-subtitle">{{ vehicle.type }}{% if vehicle.production_years %} &middot; {{ vehicle.production_years }}{% endif %}</p>
+    {% endif %}
+
+    {# Gallery preview images — each links to its own gallery page #}
+    {% if gallery and gallery.length %}
+    <section class="vehicle-gallery-previews" aria-label="Photo galleries">
+      {% for g in gallery %}
+      <a href="{{ g.url }}" class="gallery-preview-card" aria-label="Open {{ g.title }}">
+        <div class="gallery-preview-img">
+          {% if g.preview_image %}
+          <img src="{{ g.preview_image }}" alt="{{ g.preview_alt }}" loading="lazy">
+          {% else %}
+          <div class="img-placeholder"><span>{{ g.title }}</span></div>
+          {% endif %}
+        </div>
+        <span class="gallery-preview-label">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          {{ g.title }}
+        </span>
+      </a>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    {# Specifications table #}
+    {% if vehicle %}
+    <section class="specs-section">
+      <h2 class="section-heading">Specifications</h2>
+      <table class="specs-table">
+        <tbody>
+          {% if vehicle.make %}<tr><th scope="row">Make</th><td>{{ vehicle.make }}</td></tr>{% endif %}
+          {% if vehicle.model %}<tr><th scope="row">Model</th><td>{{ vehicle.model }}</td></tr>{% endif %}
+          {% if vehicle.type %}<tr><th scope="row">Type</th><td>{{ vehicle.type }}</td></tr>{% endif %}
+          {% if vehicle.production_years %}<tr><th scope="row">Production Years</th><td>{{ vehicle.production_years }}</td></tr>{% endif %}
+          {% if vehicle.body_style %}<tr><th scope="row">Body Style</th><td>{{ vehicle.body_style }}</td></tr>{% endif %}
+          {% if vehicle.engine %}<tr><th scope="row">Engine</th><td>{{ vehicle.engine }}</td></tr>{% endif %}
+          {% if vehicle.displacement %}<tr><th scope="row">Displacement</th><td>{{ vehicle.displacement }}</td></tr>{% endif %}
+          {% if vehicle.transmission %}<tr><th scope="row">Transmission</th><td>{{ vehicle.transmission }}</td></tr>{% endif %}
+          {% if vehicle.drivetrain %}<tr><th scope="row">Drivetrain</th><td>{{ vehicle.drivetrain }}</td></tr>{% endif %}
+          {% if vehicle.gvwr %}<tr><th scope="row">GVWR</th><td>{{ vehicle.gvwr }}</td></tr>{% endif %}
+          {% if vehicle.wheelbase %}<tr><th scope="row">Wheelbase</th><td>{{ vehicle.wheelbase }}</td></tr>{% endif %}
+          {% if vehicle.overall_length %}<tr><th scope="row">Overall Length</th><td>{{ vehicle.overall_length }}</td></tr>{% endif %}
+          {% if vehicle.overall_width %}<tr><th scope="row">Overall Width</th><td>{{ vehicle.overall_width }}</td></tr>{% endif %}
+          {% if vehicle.overall_height %}<tr><th scope="row">Overall Height</th><td>{{ vehicle.overall_height }}</td></tr>{% endif %}
+          {% if vehicle.crew_capacity %}<tr><th scope="row">Crew Capacity</th><td>{{ vehicle.crew_capacity }}</td></tr>{% endif %}
+          {% if vehicle.water_tank_capacity %}<tr><th scope="row">Water Tank Capacity</th><td>{{ vehicle.water_tank_capacity }}</td></tr>{% endif %}
+          {% if vehicle.pump_type %}<tr><th scope="row">Pump Type</th><td>{{ vehicle.pump_type }}</td></tr>{% endif %}
+          {% if vehicle.pump_capacity %}<tr><th scope="row">Pump Capacity</th><td>{{ vehicle.pump_capacity }}</td></tr>{% endif %}
+          {% if vehicle.notes %}<tr><th scope="row">Notes</th><td>{{ vehicle.notes }}</td></tr>{% endif %}
+        </tbody>
+      </table>
+    </section>
+    {% endif %}
+
+    {# Related parts & accessories #}
+    {% if related_parts and related_parts.length %}
+    <section class="related-parts">
+      <h2 class="section-heading">Parts &amp; Accessories</h2>
+      <ul class="related-parts-list" role="list">
+        {% for part in related_parts %}
+        <li class="related-parts-item">
+          <a href="{{ part.url }}" class="related-parts-link">
+            <span class="related-parts-name">{{ part.name }}</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {# Markdown body content #}
+    {% if content | trim %}
+    <section class="vehicle-body">
+      {{ content | safe }}
+    </section>
+    {% endif %}
+  </article>
+</div>
