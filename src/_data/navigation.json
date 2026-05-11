@@ -1,0 +1,16 @@
+{
+  "items": [
+    { "label": "Home", "url": "/" },
+    {
+      "label": "Vehicles",
+      "url": "/vehicles/",
+      "children": [
+        { "label": "Subaru Sambar", "url": "/vehicles/subaru-sambar/" },
+        { "label": "Honda Acty", "url": "/vehicles/honda-acty/" }
+      ]
+    },
+    { "label": "Parts & Accessories", "url": "/parts-and-accessories/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Licenses", "url": "/licenses/" }
+  ]
+}

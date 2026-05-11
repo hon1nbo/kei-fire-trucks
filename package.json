@@ -1,0 +1,13 @@
+{
+  "name": "kei-fire-trucks",
+  "version": "1.0.0",
+  "description": "Documentation website for Kei Fire Trucks",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "dev": "eleventy --serve --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

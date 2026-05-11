@@ -1,0 +1,76 @@
+---
+layout: base
+---
+<div class="container page-wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list" role="list">
+      <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
+      <li class="breadcrumb-item"><a href="/parts-and-accessories/" class="breadcrumb-link">Parts &amp; Accessories</a></li>
+      <li class="breadcrumb-item"><span aria-current="page">{{ title }}</span></li>
+    </ol>
+  </nav>
+
+  <article class="parts-profile">
+    <h1 class="page-title">{{ title }}</h1>
+
+    {% if part.category %}
+    <p class="vehicle-subtitle">{{ part.category }}</p>
+    {% endif %}
+
+    {% if part.description %}
+    <div class="parts-description">
+      <p>{{ part.description }}</p>
+    </div>
+    {% endif %}
+
+    {# Specifications table #}
+    {% if part_specs %}
+    <section class="specs-section">
+      <h2 class="section-heading">Specifications</h2>
+      <table class="specs-table">
+        <tbody>
+          {% for key, val in part_specs %}
+          <tr>
+            <th scope="row">{{ key }}</th>
+            <td>{{ val }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+    {% endif %}
+
+    {# Compatible vehicles #}
+    {% if compatible_vehicles and compatible_vehicles.length %}
+    <section class="related-parts">
+      <h2 class="section-heading">Compatible Vehicles</h2>
+      <ul class="related-parts-list" role="list">
+        {% for v in compatible_vehicles %}
+        <li class="related-parts-item">
+          <a href="{{ v.url }}" class="related-parts-link">
+            <span class="related-parts-name">{{ v.name }}</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {# Markdown body #}
+    {% if content | trim %}
+    <section class="vehicle-body">
+      {{ content | safe }}
+    </section>
+    {% endif %}
+
+    {% if part.notes %}
+    <aside class="parts-notes">
+      <h2 class="section-heading">Notes</h2>
+      <p>{{ part.notes }}</p>
+    </aside>
+    {% endif %}
+  </article>
+</div>

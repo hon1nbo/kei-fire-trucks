@@ -1,0 +1,54 @@
+---
+layout: base
+---
+<div class="container page-wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list" role="list">
+      <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
+      <li class="breadcrumb-item"><a href="/vehicles/" class="breadcrumb-link">Vehicles</a></li>
+      {% if vehicle_url and vehicle_name %}
+      <li class="breadcrumb-item"><a href="{{ vehicle_url }}" class="breadcrumb-link">{{ vehicle_name }}</a></li>
+      {% endif %}
+      <li class="breadcrumb-item"><span aria-current="page">{{ title }}</span></li>
+    </ol>
+  </nav>
+
+  <article class="gallery-page">
+    <div class="gallery-page-header">
+      <h1 class="page-title">{{ title }}</h1>
+      {% if vehicle_url and vehicle_name %}
+      <a href="{{ vehicle_url }}" class="btn btn-secondary">&larr; Back to {{ vehicle_name }}</a>
+      {% endif %}
+    </div>
+
+    {% if images and images.length %}
+    <div class="gallery-grid" role="list">
+      {% for img in images %}
+      <figure class="gallery-figure" role="listitem">
+        <a href="{{ img.src }}" class="gallery-img-link" target="_blank" rel="noopener" aria-label="View full size: {{ img.alt }}">
+          <img src="{{ img.src }}" alt="{{ img.alt }}" loading="lazy" class="gallery-img">
+        </a>
+        {% if img.caption %}
+        <figcaption class="gallery-caption">{{ img.caption }}</figcaption>
+        {% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
+        <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+        <polyline points="21 15 16 10 5 21"/>
+      </svg>
+      <p>No images have been added to this gallery yet.</p>
+    </div>
+    {% endif %}
+
+    {# Markdown body (optional notes) #}
+    {% if content | trim %}
+    <div class="gallery-notes">
+      {{ content | safe }}
+    </div>
+    {% endif %}
+  </article>
+</div>
