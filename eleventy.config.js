@@ -5,6 +5,8 @@ module.exports = function (eleventyConfig) {
   // Pass through static assets
   eleventyConfig.addPassthroughCopy({ "media": "media" });
   eleventyConfig.addPassthroughCopy({ "style": "style" });
+  // Custom domain file for GitHub Pages
+  eleventyConfig.addPassthroughCopy({ "CNAME": "CNAME" });
 
   // Expose license files as plain text at /licenses/
   eleventyConfig.addPassthroughCopy({
