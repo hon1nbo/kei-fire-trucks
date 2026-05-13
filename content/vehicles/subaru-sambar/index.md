@@ -29,7 +29,7 @@ vehicle:
 
 gallery:
   - title: Exterior Gallery
-    preview_image: /media/vehicles/subaru-sambar/exterior-thumb.jpg
+    preview_image: https://f002.backblazeb2.com/file/keifiretrucks-com/subaru-sambar-overview-thumb.jpg
     preview_alt: Subaru Sambar kei fire truck exterior view
     url: /vehicles/subaru-sambar/gallery-exterior/
   - title: Equipment Gallery
