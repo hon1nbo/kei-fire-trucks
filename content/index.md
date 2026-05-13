@@ -54,9 +54,12 @@ description: Documentation and reference for Japanese kei-class fire trucks
   <h2>Featured Vehicles</h2>
   <div class="card-grid">
     <a href="/vehicles/subaru-sambar/" class="card">
-      <div class="card-img">
-        <div class="img-placeholder">Subaru Sambar</div>
-      </div>
+  <div class="card-img">
+    <img src="https://f002.backblazeb2.com/file/keifiretrucks-com/subaru/subaru-sambar-overview-thumb.jpg"
+         alt="Subaru Sambar kei fire truck"
+         loading="lazy">
+  </div>
+
       <div class="card-body">
         <div class="card-title">Subaru Sambar</div>
         <div class="card-desc">660cc kei fire truck — 1990 to 2012</div>

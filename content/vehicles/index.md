@@ -14,9 +14,11 @@ and links to related parts and accessories.
 
 <div class="card-grid">
   <a href="/vehicles/subaru-sambar/" class="card">
-    <div class="card-img">
-      <div class="img-placeholder">Subaru Sambar</div>
-    </div>
+  <div class="card-img">
+    <img src="https://f002.backblazeb2.com/file/keifiretrucks-com/subaru/subaru-sambar-overview-thumb.jpg"
+         alt="Subaru Sambar kei fire truck"
+         loading="lazy">
+  </div>
     <div class="card-body">
       <div class="card-title">Subaru Sambar</div>
       <div class="card-desc">Cab-over kei fire truck &mdash; 1990&ndash;2012</div>
