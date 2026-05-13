@@ -9,6 +9,8 @@ Anyone with information for kei fire trucks and submit data, photos, and other i
 
 If you need help submitting data or are not familiar with github, you can open an issue to get help or contact @hon1nbo (the repository owner) through any of the means on [their webpage](https://hon1nbo.com)
 
+## Data Verification & Page Markers
+Some pages have data that is not verified to allow the basics to be visible and for community feedback. These will have the page title marked as needing validation, and missing or uncertain fiels will be marked with the letters ***`TKTK`***. These letters are unlikely to appear to any natural speech and can be filtered for to identify information that is still pending validation or submission.
 
 # Repository structure
 
