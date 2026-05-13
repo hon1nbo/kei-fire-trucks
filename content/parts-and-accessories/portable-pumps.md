@@ -33,7 +33,8 @@ compatible_vehicles:
 
 ## Common Manufacturers
 
-Several Japanese manufacturers produce portable pumps widely used with kei fire apparatus:
+TKTK Identify more manufacturers and link manuals
+Japanese manufacturers produce portable pumps widely used with kei fire apparatus:
 
 - **Tohatsu (東発)** — TKTK the VC82ASE and similar models are standard issue for many fire brigades.
 - **Shibaura (株式会社 IHI シバウラ)** - [FT-500A fire pump](https://www.shibaura-bousai.co.jp/en/products/ft500-a/) reaches up to 1400 L/min @ 0.5 MPa, 850 L/min @ 1.0 MPa
