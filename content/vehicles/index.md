@@ -21,7 +21,6 @@ and links to related parts and accessories.
       <div class="card-title">Subaru Sambar</div>
       <div class="card-desc">Cab-over kei fire truck &mdash; 1990&ndash;2012</div>
     </div>
-    <div class="card-footer">660cc &middot; 4WD available &middot;/div>
   </a>
 
 </div>
