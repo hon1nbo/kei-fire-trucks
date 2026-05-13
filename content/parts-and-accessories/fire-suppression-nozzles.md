@@ -9,28 +9,26 @@ tags:
 part:
   category: Fire Suppression
   description: >
-    Fire suppression nozzles control the flow pattern, flow rate, and pressure of water
-    delivered from a kei fire truck's hose system. Kei fire trucks typically carry 40 mm
-    (1.5-inch) attack lines with combination or fog nozzles, and may carry a larger 65 mm
-    supply line for relay operations.
+    Fire suppression nozzles TKTK
   notes: >
     Confirm nozzle thread pattern matches your hose couplings before purchase.
-    Japanese JIS couplings differ from American NH/NST and British instantaneous patterns.
-    Adapters are available but add complexity at the nozzle end.
+    Japanese JIS couplings differ from American NH/NST and British threads.
+    Adapters may be available, but with the age of the vehicles and department discretion
+    it may be necessary to determine which standard the vehicle is using vs original equipment spec.
 
 part_specs:
   Attack Line Size: "40 mm (1½\") — most common on kei apparatus"
   Supply Line Size: "65 mm (2½\") — relay/supply connections"
   Thread Standard: "JIS B 9906 (Japan standard)"
-  Typical Flow Range: "60–200 L/min (adjustable)"
-  Operating Pressure: "0.3–0.7 MPa at nozzle"
-  Pattern Types: "Straight stream, fog (fixed), combination (variable)"
+  Typical Flow Range: "TKTK 60–200 L/min (adjustable)"
+  Operating Pressure: "TKTK 0.3–0.7 MPa at nozzle"
+  Pattern Types: "TKTK Straight stream, fog (fixed), combination (variable)"
 
 compatible_vehicles:
   - name: Subaru Sambar
     url: /vehicles/subaru-sambar/
-  - name: Honda Acty
-    url: /vehicles/honda-acty/
+  - name: Template Vehicle
+    url: /vehicles/template-vehicle/
 ---
 
 ## Nozzle Types
@@ -41,22 +39,18 @@ Common on older Japanese apparatus; simple, low-maintenance, and highly reliable
 
 ### Fog Nozzles (Fixed Pattern)
 Produce a fixed cone angle of water droplets. Effective for heat absorption and
-protecting crews. Common on Type-2 apparatus where simplicity is prioritized.
+protecting crews.
 
 ### Combination Nozzles
 Allow the operator to select between straight stream and variable fog patterns.
-Most versatile option; the most common type supplied on newer kei apparatus.
+Most versatile option
 
 ## JIS Coupling Reference
+
+TKTK validate coupler sizes
 
 | Size | JIS Designation | Inner Diameter |
 |------|----------------|----------------|
 | 40 mm | JIS-40 | 40 mm |
 | 65 mm | JIS-65 | 65 mm |
 | 75 mm | JIS-75 | 75 mm |
-
-## Compatibility with Export Markets
-
-Many kei fire trucks exported to North America, Australia, and Europe retain their original
-JIS couplings. Adapters to ANSI/NH, BSP, or Storz standards are available from specialty
-fire equipment suppliers and allow integration with local hose inventories.
