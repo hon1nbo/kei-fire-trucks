@@ -6,7 +6,7 @@ permalink: /parts-and-accessories/
 breadcrumb:
   - label: Home
     url: /
-  - label: Parts &amp; Accessories
+  - label: Parts & Accessories
 ---
 
 Reference pages for identified firefighting equipment, replacement parts, and accessories
@@ -27,5 +27,14 @@ compatible with kei fire trucks.
       <div class="card-desc">Various nozzles for kei fire hose systems</div>
     </div>
     <div class="card-footer">Fire Suppression</div>
+  </a>
+</div>
+
+  <a href="/parts-and-accessories/siren-systems/" class="card">
+    <div class="card-body">
+      <div class="card-title">Sirens & Emergency Lights</div>
+      <div class="card-desc">Siren Systems & Illumination</div>
+    </div>
+    <div class="card-footer">Siren Systems</div>
   </a>
 </div>
