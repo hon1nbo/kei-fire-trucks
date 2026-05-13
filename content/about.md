@@ -28,7 +28,8 @@ In addition to providing documentation on the vehicles for educational reasons f
 ## Contact
 
 Github: [Contribute or Report Issues](https://github.com/hon1nbo/kei-fire-trucks)
-Site Owner Portfolio: [Hon1nbo](https://hon1nbo.com)
+
+Site Owner Portfolio & Contact: [Hon1nbo](https://hon1nbo.com)
 
 ## Special Thanks
 
