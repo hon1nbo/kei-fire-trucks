@@ -62,14 +62,6 @@ description: Documentation and reference for Japanese kei-class fire trucks
         <div class="card-desc">660cc kei fire truck — 1990 to 2012</div>
       </div>
     </a>
-    <a href="/vehicles/honda-acty/" class="card">
-      <div class="card-img">
-        <div class="img-placeholder">Honda Acty</div>
-      </div>
-      <div class="card-body">
-        <div class="card-title">Honda Acty</div>
-        <div class="card-desc">660cc kei fire truck — 1988 to 2021</div>
-      </div>
-    </a>
+
   </div>
 </div>
