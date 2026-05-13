@@ -6,7 +6,7 @@
       "url": "/vehicles/",
       "children": [
         { "label": "Subaru Sambar", "url": "/vehicles/subaru-sambar/" },
-        { "label": "Honda Acty", "url": "/vehicles/honda-acty/" }
+        { "label": "template-vehicle", "url": "/vehicles/template-vehicle/" }
       ]
     },
     { "label": "Parts & Accessories", "url": "/parts-and-accessories/" },
