@@ -7,7 +7,7 @@ vehicle_url: /vehicles/subaru-sambar/
 vehicle_name: Subaru Sambar
 
 images:
-  - src: [/media/vehicles/subaru-sambar/exterior-01.jpg](https://f002.backblazeb2.com/file/keifiretrucks-com/subaru-sambar-overview.jpg)
+  - src: https://f002.backblazeb2.com/file/keifiretrucks-com/subaru-sambar-overview.jpg
     alt: Subaru Sambar fire truck – front three-quarter view
     caption: Front three-quarter view showing pump panel and cab
   - src: /media/vehicles/subaru-sambar/exterior-02.jpg
