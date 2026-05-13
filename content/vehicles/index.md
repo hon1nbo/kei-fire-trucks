@@ -21,17 +21,7 @@ and links to related parts and accessories.
       <div class="card-title">Subaru Sambar</div>
       <div class="card-desc">Cab-over kei fire truck &mdash; 1990&ndash;2012</div>
     </div>
-    <div class="card-footer">660cc &middot; 4WD available &middot; 150&ndash;200 L tank</div>
+    <div class="card-footer">660cc &middot; 4WD available &middot;/div>
   </a>
 
-  <a href="/vehicles/honda-acty/" class="card">
-    <div class="card-img">
-      <div class="img-placeholder">Honda Acty</div>
-    </div>
-    <div class="card-body">
-      <div class="card-title">Honda Acty</div>
-      <div class="card-desc">Cab-over kei fire truck &mdash; 1988&ndash;2021</div>
-    </div>
-    <div class="card-footer">660cc &middot; 4WD available &middot; 150&ndash;200 L tank</div>
-  </a>
 </div>
